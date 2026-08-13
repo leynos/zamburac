@@ -10,3 +10,8 @@ __pycache__/
 *.swp
 .grepai/
 *:Zone.Identifier
+.vtcode/
+.claude/
+.memdb/
+*.swo
+*~
