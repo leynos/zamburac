@@ -31,11 +31,6 @@ extend-exclude = [
 [default]
 locale = "en-gb"
 extend-ignore-re = [
-    "-fuse-ld=mold",
-    "mold linker",
-    "Cranelift \\+ mold",
-    "Cranelift and mold",
-    "`mold`",
     "(?m)^        from astroid import nodes$",
     "(?m)^        import astroid$",
     "(?m)^        tree = astroid\\.parse\\(script_text\\)$",
@@ -49,8 +44,13 @@ extend-ignore-re = [
     "(?m)^\\[\\^19\\]: Command Query Responsibility Segregation pattern — Azure Architecture\\n       Center \\| Microsoft Learn,$",
     "(?m)^\\t--with cmd-mox --with astroid --with cuprum==0\\.1\\.0 \\\\$",
     "(?s)```.*?```",
+    "-fuse-ld=mold",
+    "Cranelift \\+ mold",
+    "Cranelift and mold",
     "\\brust-analyzer\\b",
     "`[^`\\n]+`",
+    "`mold`",
+    "mold linker",
 ]
 
 [default.extend-words]
