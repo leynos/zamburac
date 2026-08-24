@@ -12,6 +12,13 @@ accepted = []
 
 [patterns]
 ignore = [
+  # "mold" names the linker (https://github.com/rui314/mold) in these
+  # contexts only; the mould correction stays active elsewhere.
+  "-fuse-ld=mold",
+  "mold linker",
+  "Cranelift \\+ mold",
+  "Cranelift and mold",
+  "`mold`",
   # Astroid is the upstream package and API spelling.
   '(?m)^# dependencies = \["astroid"\]$',
   '(?m)^\t--with cmd-mox --with astroid --with cuprum==0\.1\.0 \\$',

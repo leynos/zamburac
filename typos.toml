@@ -44,8 +44,13 @@ extend-ignore-re = [
     "(?m)^\\[\\^19\\]: Command Query Responsibility Segregation pattern — Azure Architecture\\n       Center \\| Microsoft Learn,$",
     "(?m)^\\t--with cmd-mox --with astroid --with cuprum==0\\.1\\.0 \\\\$",
     "(?s)```.*?```",
+    "-fuse-ld=mold",
+    "Cranelift \\+ mold",
+    "Cranelift and mold",
     "\\brust-analyzer\\b",
     "`[^`\\n]+`",
+    "`mold`",
+    "mold linker",
 ]
 
 [default.extend-words]
