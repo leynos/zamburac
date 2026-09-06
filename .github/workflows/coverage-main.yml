@@ -28,13 +28,13 @@ jobs:
         with:
           submodules: recursive
       - name: Setup Rust
-        uses: leynos/shared-actions/.github/actions/setup-rust@794e4801babcf68065c660fdf4781ad62be5d061
+        uses: leynos/shared-actions/.github/actions/setup-rust@2055f0a7aba1a9d439dd7aba1f3559416b0a08ce
       - name: Setup uv
         run: |
           python3 -m pip install --user uv==0.10.2
           echo "${HOME}/.local/bin" >> "${GITHUB_PATH}"
       - name: Generate coverage
-        uses: leynos/shared-actions/.github/actions/generate-coverage@794e4801babcf68065c660fdf4781ad62be5d061
+        uses: leynos/shared-actions/.github/actions/generate-coverage@2055f0a7aba1a9d439dd7aba1f3559416b0a08ce
         with:
           output-path: lcov.info
           format: lcov
@@ -42,7 +42,7 @@ jobs:
           with-ratchet: 'true'
       - name: Upload coverage data to CodeScene
         if: env.CS_ACCESS_TOKEN
-        uses: leynos/shared-actions/.github/actions/upload-codescene-coverage@794e4801babcf68065c660fdf4781ad62be5d061
+        uses: leynos/shared-actions/.github/actions/upload-codescene-coverage@2055f0a7aba1a9d439dd7aba1f3559416b0a08ce
         with:
           format: lcov
           access-token: ${{ env.CS_ACCESS_TOKEN }}
