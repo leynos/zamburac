@@ -184,31 +184,13 @@ checksum = "8e0bf07d379916947be6c4a07f43684153d710a2896c31f9e97781362895596c"
 dependencies = [
  "ambient-authority",
  "fs-set-times",
- "io-extras 0.18.4",
- "io-lifetimes 2.0.4",
+ "io-extras",
+ "io-lifetimes",
  "ipnet",
  "maybe-owned",
  "rustix",
  "rustix-linux-procfs",
  "windows-sys 0.59.0",
- "winx",
-]
-
-[[package]]
-name = "cap-primitives"
-version = "4.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cdadbd7c002d3a484b35243669abdae85a0ebaded5a61117169dc3400f9a7ff0"
-dependencies = [
- "ambient-authority",
- "fs-set-times",
- "io-extras 0.19.0",
- "io-lifetimes 3.0.1",
- "ipnet",
- "maybe-owned",
- "rustix",
- "rustix-linux-procfs",
- "windows-sys 0.61.2",
  "winx",
 ]
 
@@ -219,22 +201,9 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a59e59fa26472d29680ece6a9f8ee8b0551a719a33df2f5240bde065ecbddfd7"
 dependencies = [
  "camino",
- "cap-primitives 3.4.6",
- "io-extras 0.18.4",
- "io-lifetimes 2.0.4",
- "rustix",
-]
-
-[[package]]
-name = "cap-std"
-version = "4.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7281235d6e96d3544ca18bba9049be92f4190f8d923e3caef1b5f66cfa752608"
-dependencies = [
- "camino",
- "cap-primitives 4.0.2",
- "io-extras 0.19.0",
- "io-lifetimes 3.0.1",
+ "cap-primitives",
+ "io-extras",
+ "io-lifetimes",
  "rustix",
 ]
 
@@ -500,7 +469,7 @@ version = "0.20.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "94e7099f6313ecacbe1256e8ff9d617b75d1bcb16a6fddef94866d225a01a14a"
 dependencies = [
- "io-lifetimes 2.0.4",
+ "io-lifetimes",
  "rustix",
  "windows-sys 0.59.0",
 ]
@@ -759,9 +728,9 @@ dependencies = [
 
 [[package]]
 name = "indexmap"
-version = "2.14.0"
+version = "2.14.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d466e9454f08e4a911e14806c24e16fba1b4c121d1ea474396f396069cf949d9"
+checksum = "cc4e190f5d26ca7051642629da2c52fc03bde85a03197c99408dcd291734c855"
 dependencies = [
  "equivalent",
  "hashbrown 0.17.0",
@@ -809,17 +778,7 @@ version = "0.18.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2285ddfe3054097ef4b2fe909ef8c3bcd1ea52a8f0d274416caebeef39f04a65"
 dependencies = [
- "io-lifetimes 2.0.4",
- "windows-sys 0.59.0",
-]
-
-[[package]]
-name = "io-extras"
-version = "0.19.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "20fd6de4ccfcc187e38bc21cfa543cb5a302cb86a8b114eb7f0bf0dc9f8ac00f"
-dependencies = [
- "io-lifetimes 3.0.1",
+ "io-lifetimes",
  "windows-sys 0.59.0",
 ]
 
@@ -828,12 +787,6 @@ name = "io-lifetimes"
 version = "2.0.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "06432fb54d3be7964ecd3649233cddf80db2832f47fec34c01f65b3d9d774983"
-
-[[package]]
-name = "io-lifetimes"
-version = "3.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2f0fb0570afe1fed943c5c3d4102d5358592d8625fda6a0007fdbe65a92fba96"
 
 [[package]]
 name = "ipnet"
@@ -1425,7 +1378,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fe104196f61dc8911a8da1b10005e9401e7c2e14ad9302e2de6688311c0beec7"
 dependencies = [
  "camino",
- "cap-std 3.4.6",
+ "cap-std",
  "cfg-if",
  "convert_case 0.6.0",
  "gherkin",
@@ -2385,7 +2338,7 @@ dependencies = [
  "anyhow",
  "backon",
  "camino",
- "cap-std 4.0.2",
+ "cap-std",
  "monty",
  "newt-hype",
  "rstest",
